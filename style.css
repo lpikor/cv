@@ -8,6 +8,7 @@
     --light-color: #FAFAFA;
     --dark-color: #303030;
     --dark-transparent-color: #30303040;
+    --border: 1px solid var(--dark-transparent-color);
 }
 
 body {
@@ -24,8 +25,9 @@ header {
 
 h1,
 h2 {
-    text-transform: uppercase;
+    line-height: 1.3;
     letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 a {
@@ -41,13 +43,13 @@ ul {
     margin: 1rem;
 }
 
-.header {
-    max-width: 250px;
-}
-
 .contact__item,
 .list__item {
     padding: .25rem 0;
+}
+
+.list {
+    max-width: 600px;
 }
 
 .history {
@@ -60,11 +62,20 @@ ul {
 }
 
 .header__name {
+    max-width: 250px;
     font-size: 3rem;
 }
 
+.history {
+    max-width: 800px;
+}
+
+.history__place {
+    display: block;
+}
+
 .section {
-    border-top: 1px solid var(--dark-transparent-color);
+    border-top: var(--border);
 }
 
 .section__heading {
@@ -81,4 +92,52 @@ ul {
     width: 50px;
     height: 3px;
     background: var(--dark-color);
+}
+
+.section__paragraph {
+    max-width: 800px;
+}
+
+@media (min-width: 1024px) {
+    .section {
+        border-top: none;
+    }
+
+    .wrapper {
+        margin: 2rem;
+    }
+
+    .header {
+        margin: 1rem 2rem 0 2rem;
+        border-bottom: var(--border);
+    }
+
+    .content {
+        display: flex;
+    }
+
+    .info {
+        flex-basis: 30%;
+        margin-left: 2rem;
+        padding-right: 2rem;
+        border-right: var(--border);
+    }
+
+    .main {
+        flex-basis: 70%;
+        margin: 0 2rem;
+    }
+
+    .main .section {
+        border-bottom: var(--border);
+    }
+
+    .main .section:last-child {
+        border-bottom: none;
+    }
+
+    .history__info {
+        display: flex;
+        justify-content: space-between;
+    }
 }
