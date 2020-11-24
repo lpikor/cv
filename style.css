@@ -124,7 +124,7 @@ ul {
     margin: 1rem 0;
 }
 
-@media (min-width: 1024px) {
+@media print, (min-width: 1024px) {
     .section {
         border-top: none;
     }
@@ -165,5 +165,28 @@ ul {
     .history__info {
         display: flex;
         justify-content: space-between;
+    }
+}
+
+@media print {
+    body {
+        font-size: 11pt;
+        line-height: 1.5;
+    }
+
+    .wrapper {
+        margin: 0;
+    }
+
+    .contact__item, .list__item {
+        padding: initial;
+    }
+
+    .header__name {
+        font-size: 2rem;
+    }
+
+    .section__heading {
+        padding: 0;
     }
 }
