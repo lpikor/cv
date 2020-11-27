@@ -200,3 +200,7 @@ ul {
         font-size: .5rem;
     }
 }
+
+@page {
+    margin: 0;
+}
