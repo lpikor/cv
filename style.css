@@ -188,6 +188,10 @@ ul {
         border-bottom: var(--border);
     }
 
+    .header__navigation {
+        display: none;
+    }
+
     .content {
         display: flex;
     }
