@@ -188,10 +188,6 @@ ul {
         border-bottom: var(--border);
     }
 
-    .header__navigation {
-        display: none;
-    }
-
     .content {
         display: flex;
     }
@@ -238,6 +234,10 @@ ul {
 
     .header__name {
         font-size: 2rem;
+    }
+
+    .header__navigation {
+        display: none;
     }
 
     .section__heading {
