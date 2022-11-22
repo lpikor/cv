@@ -49,6 +49,14 @@ ul {
     margin: 1rem;
 }
 
+.contact__label {
+    text-transform: capitalize;
+}
+
+.languages .list__item::first-letter {
+    text-transform: capitalize;
+}
+
 .contact__item,
 .list__item {
     padding: .25rem 0;

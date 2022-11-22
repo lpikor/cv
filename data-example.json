@@ -1,0 +1,158 @@
+{
+    "en": {
+        "name": "Jerry Kowalski",
+        "position": "WordPress Developer",
+        "phone": "+48 555 555 555",
+        "email": "user@example.com",
+        "links": [
+            {
+                "label": "GitHub",
+                "url": "https://github.com/"
+            },
+            {
+                "label": "LinkedIn",
+                "url": "https://www.linkedin.com/"
+            }
+        ],
+        "skills": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Alpine.js",
+            "PHP",
+            "WordPress",
+            "Twig",
+            "Timber",
+            "RWD",
+            "Git",
+            "npm"
+        ],
+        "contactLabel": "contact",
+        "phoneLabel": "phone",
+        "emailLabel": "E-mail",
+        "linksLabel": "links",
+        "skillsLabel": "skills",
+        "languagesLabel": "languages",
+        "languages": [
+            "polish - native",
+            "english - B2"
+        ],
+        "aboutMeLabel": "about me",
+        "bio": "This is my bio.",
+        "workHistoryLabel": "work history",
+        "workHistory": [
+            {
+                "position": "WordPress Developer",
+                "company": "company",
+                "city": "city",
+                "period": "October 2022 - currently",
+                "tasks": [
+                    "task1",
+                    "task2",
+                    "task3",
+                    "task4"
+                ]
+            },
+            {
+                "position": "WordPress Developer",
+                "company": "company",
+                "city": "city",
+                "period": "October 2021 - September 2022",
+                "tasks": [
+                    "task1",
+                    "task2",
+                    "task3",
+                    "task4"
+                ]
+            }
+        ],
+        "educationLabel": "education",
+        "educationHistory": [
+            {
+                "field": "Information Technology",
+                "school": "University of Gdańsk",
+                "city": "Gdańsk",
+                "period": "October 2016 - June 2019"
+            }
+        ],
+        "consent": "I hereby give consent for my personal data to be processed by [nazwa firmy] for the purpose of conducting recruitment for the position for which I am applying."
+    },
+    "pl": {
+        "name": "Jerzy Kowalski",
+        "position": "WordPress Developer",
+        "phone": "+48 555 555 555",
+        "email": "user@example.com",
+        "links": [
+            {
+                "label": "GitHub",
+                "url": "https://github.com/"
+            },
+            {
+                "label": "LinkedIn",
+                "url": "https://www.linkedin.com/"
+            }
+        ],
+        "skills": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Alpine.js",
+            "PHP",
+            "WordPress",
+            "Twig",
+            "Timber",
+            "RWD",
+            "Git",
+            "npm"
+        ],
+        "contactLabel": "kontakt",
+        "phoneLabel": "telefon",
+        "emailLabel": "E-mail",
+        "linksLabel": "linki",
+        "skillsLabel": "umiejętności",
+        "languagesLabel": "języki",
+        "languages": [
+            "polski - ojczysty",
+            "angielski - B2"
+        ],
+        "aboutMeLabel": "o mnie",
+        "bio": "To jest sekcja o mnie.",
+        "workHistoryLabel": "historia zatrudnienia",
+        "workHistory": [
+            {
+                "position": "WordPress Developer",
+                "company": "firma",
+                "city": "miasto",
+                "period": "Październik 2022 - obecnie",
+                "tasks": [
+                    "task1",
+                    "task2",
+                    "task3",
+                    "task4"
+                ]
+            },
+            {
+                "position": "WordPress Developer",
+                "company": "firma",
+                "city": "miasto",
+                "period": "Paźdzniernik 2021 - Wrzesień 2022",
+                "tasks": [
+                    "task1",
+                    "task2",
+                    "task3",
+                    "task4"
+                ]
+            }
+        ],
+        "educationLabel": "edukacja",
+        "educationHistory": [
+            {
+                "field": "Informatyka",
+                "school": "Uniwersytet Gdański",
+                "city": "Gdańsk",
+                "period": "Październik 2016 - Czerwiec 2019"
+            }
+        ],
+        "consent": "Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z ustawą z dnia 10 maja 2018 roku o ochronie danych osobowych (Dz.Ustaw z 2018, poz. 1000) oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO)."
+    }
+}

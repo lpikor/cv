@@ -1,0 +1,5 @@
+const alpineInstance = () => {
+    return {
+        data: []
+    }
+}
