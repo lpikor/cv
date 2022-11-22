@@ -2,7 +2,7 @@
     "en": {
         "name": "Jerry Kowalski",
         "position": "WordPress Developer",
-        "phone": "+48 555 555 555",
+        "phone": "+48555555555",
         "email": "user@example.com",
         "links": [
             {
@@ -80,7 +80,7 @@
     "pl": {
         "name": "Jerzy Kowalski",
         "position": "WordPress Developer",
-        "phone": "+48 555 555 555",
+        "phone": "+48555555555",
         "email": "user@example.com",
         "links": [
             {

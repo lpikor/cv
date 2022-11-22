@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
+    x-data="alpineInstance()"
+    x-init="fetch('./data.json')
+            .then(response => response.json())
+            .then(json => data = json.en)">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Łukasz Pikor - WordPress Developer - CV</title>
+    <title x-text="`${data.name} - ${data.position} - CV`"></title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
-<body
-    x-data="alpineInstance()"
-    x-init="fetch('./data.json')
-            .then(response => response.json())
-            .then(json => data = json.en)">
+<body>
     <div class="wrapper">
         <header class="header">
             <div class="header__info">
@@ -27,77 +27,83 @@
                     <h2 class="section__heading" x-text="data.contactLabel"></h2>
                     <article class="contact__item">
                         <h3 class="contact__label" x-text="data.phoneLabel"></h3>
-                        <span class="contact__value"><a :href="`tel:${data.phone.replace(/ /g, '')}`" x-text="data.phone"></a></span>
+                        <span class="contact__value"><a :href="`tel:${data.phone}`" x-text="data.phone"></a></span>
                     </article>
                     <article class="contact__item">
                         <h3 class="contact__label">E-mail</h3>
-                        <span class="contact__value"><a href="mailto:pikorlukasz@gmail.com">pikorlukasz@gmail.com</a></span>
+                        <span class="contact__value"><a :href="`mailto:${data.email}`" x-text="data.email"></a></span>
                     </article>
                 </section>
                 <section class="section links">
-                    <h2 class="section__heading" x-text="data.linksLabel">Links</h2>
+                    <h2 class="section__heading" x-text="data.linksLabel"></h2>
                     <ul class="list">
                         <template x-for="link in data.links">
-                            <li class="list__item"><a :href="link.url" rel="noopener norefferer" target="_blank" x-text="link.label">GitHub</a></li>
+                            <li class="list__item"><a :href="link.url" rel="noopener norefferer" target="_blank" x-text="link.label"></a></li>
                         </template>
                     </ul>
                 </section>
                 <section class="section skills">
-                    <h2 class="section__heading" x-text="data.skillsLabel">Skills</h2>
+                    <h2 class="section__heading" x-text="data.skillsLabel"></h2>
                     <ul class="list">
                         <template x-for="skill in data.skills">
-                            <li class="list__item" x-text="skill">HTML</li>
+                            <li class="list__item" x-text="skill"></li>
                         </template>
                     </ul>
                 </section>
                 <section class="section languages">
-                    <h2 class="section__heading" x-text="data.languagesLabel">Languages</h2>
+                    <h2 class="section__heading" x-text="data.languagesLabel"></h2>
                     <ul class="list">
                         <template x-for="language in data.languages">
-                            <li class="list__item" x-text="language">English - B2</li>
+                            <li class="list__item" x-text="language"></li>
                         </template>
                     </ul>
                 </section>
             </aside>
             <main class="main">
                 <section class="section profile">
-                    <h2 class="section__heading" x-text="data.aboutMeLabel">About me</h2>
-                    <p class="section__paragraph" x-text="data.bio">I'm a WordPress Developer with experience as a QA Engineer. I love learning new technologies and use them in real tasks. I try to forge my skills into a clean and effective code. Beyond clearly technological aspects, it's in my nature to focus also on the user experience. I spend my free time learning 3D modelling, game development, music production and improving guitar and bass playing.</p>
+                    <h2 class="section__heading" x-text="data.aboutMeLabel"></h2>
+                    <p class="section__paragraph" x-text="data.bio"></p>
                 </section>
                 <section class="section employment-history">
-                    <h2 class="section__heading" x-text="data.workHistoryLabel">Work history</h2>
+                    <h2 class="section__heading" x-text="data.workHistoryLabel"></h2>
                     <template x-for="work in data.workHistory">
                         <article class="history">
                             <div class="history__info">
-                                <h3 class="history__title"><span class="history__position" x-text="work.position">WordPress Developer</span>, <span class="history__place" x-text="work.company">Osom Studio</span></h3>
-                                <span class="history__city" x-text="work.city">Łódź (remotely)</span>
+                                <h3 class="history__title"><span class="history__position" x-text="work.position"></span>, <span class="history__place" x-text="work.company"></span></h3>
+                                <span class="history__city" x-text="work.city"></span>
                             </div>
-                            <span class="history__period" x-text="work.period">February 2021 - currently</span>
+                            <span class="history__period" x-text="work.period"></span>
                             <ul class="list">
                                 <template x-for="task in work.tasks">
-                                    <li class="list__item" x-text="task">Creating WordPress layouts with HTML, CSS (SCSS), JavaScript, PHP, Twig and Timber</li>
+                                    <li class="list__item" x-text="task"></li>
                                 </template>
                             </ul>
                         </article>
                     </template>
                 </section>
                 <section class="section education">
-                    <h2 class="section__heading" x-text="data.educationLabel">Education</h2>
+                    <h2 class="section__heading" x-text="data.educationLabel"></h2>
                     <template x-for="education in data.educationHistory">
                         <article class="history">
                             <div class="history__info">
-                                <h3 class="history__title"><span class="history__field" x-text="education.field">Information Technology</span>, <span class="history__place" x-text="education.school">University of Gdańsk</span></h3>
-                                <span class="history__city" x-text="education.city">Gdańsk</span>
+                                <h3 class="history__title"><span class="history__field" x-text="education.field"></span>, <span class="history__place" x-text="education.school"></span></h3>
+                                <span class="history__city" x-text="education.city"></span>
                             </div>
-                            <span class="history__period" x-text="education.period">October 2016 - January 2019</span>
+                            <span class="history__period" x-text="education.period"></span>
                         </article>
                     </template>
                 </section>
             </main>
         </div>
-        <p class="consent" x-text="data.consent">I hereby give consent for my personal data to be processed by [nazwa firmy] for the purpose of conducting recruitment for the position for which I am applying.</p>
+        <p class="consent" x-text="data.consent"></p>
     </div>
 
-    <script src="index.js"></script>
+    <script>
+        const alpineInstance = () => {
+            return {
+                data: []
+            }
+        }
+    </script>
 </body>
 </html>
